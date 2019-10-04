@@ -1,1 +1,2 @@
-# Mudra Loan Project Building using Nodejs + Express
+# Mudra Loan Project BuildUp using Nodejs + Express
+# Using Pug markup template, mongodb as a database

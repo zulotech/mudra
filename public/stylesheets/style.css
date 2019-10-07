@@ -1,17 +1,97 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
-  color: #00B7FF;
+  text-decoration: none;
 }
-
+#header {
+  width: 75%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.6s;
+}
+.button {
+  background: crimson;
+  padding: 10px 14px;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.button a {
+  color: #fff;
+}
+.button:hover {
+  background: coral
+}
 #footer {
   background: #121211;
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
   color: #fff;
+}
+
+/* Index Page */
+#headbann {
+  max-width: 100%;
+  height: auto;
+  overflow: auto;
+  background: transparent;
+}
+#headbann > img {
+  max-width: 100%;
+}
+.writeUp {
+  width: 75%;
+  /* padding: 5px; */
+  margin: auto;
+}
+.writeUp > p {
+  font-size: 16px;
+  color: #858282;
+  line-height: 25px;
+  font-weight: 500;
+}
+#catalog {
+  background: #c1c1c1;
+  padding: 40px 30px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.sectionBox {
+  background: coral;
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px/19px 20px;
+  box-shadow: 0 0 34px 0 rgba(0, 0, 244, 0.2);
+  margin: 20px;
+  border: 1px solid #fff;
+}
+.sectionH3 {
+  font-size: 36px;
+  text-align: center;
+}
+.sectionBox > p {
+  font-size: 20px;
+  align-content: center;
+}
+/* media query */
+@media screen and (max-width: 850px) {
+  #header {
+    width: 90%;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .writeUp {
+    width: 90%;
+  }
 }

@@ -3,7 +3,17 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
   body
+    block head
+      #header
+        img(src="/images/logo.jpg", alt="Mudra logo")
+        div
+          img(src="/images/mudra-loan-portal.jpg", alt="Mudra loan portal", style="vertical-align: middle")
+          .button
+            i(class="fa fa-sign-in", style="color: #fff;") &nbsp;
+            a(href="/users") Log In
+
     block content
     block foot
       #footer

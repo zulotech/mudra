@@ -1,7 +1,26 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+//- append head
 
-append foot
+
+block content
+  block headbanner
+    #headbann
+      img(src="/images/mudra-banner.jpg", alt="Mudra Loan Banner")
+  block main
+    #mainSection
+      h1(align="center", style="font-weight: 900;") PRADHAN MANTRI MUDRA YOJANA (PMMY)
+      div(class="writeUp")
+        p(align="center") Pradhan Mantri MUDRA Yojana  (PMMY)  is a scheme launched by the Hon’ble Prime Minister on April 8, 2015 for providing loans upto  10 lakh to the non-corporate, non-farm small/micro enterprises. These loans are classified as MUDRA loans under PMMY. These loans are given by Commercial Banks, RRBs, Small Finance Banks, Cooperative Banks, MFIs and NBFCs. The borrower can approach any of the lending institutions mentioned above or can apply online through this portal. Under the aegis of PMMY, MUDRA has created three products namely   'Shishu', 'Kishore' and 'Tarun' to signify the stage of growth / development and funding needs of the beneficiary micro unit / entrepreneur and also provide a reference point for the next phase of graduation / growth. The loan limits under the three products are given below
+    #catalog
+      section(class="sectionBox")
+        h3(class="sectionH3") Shishu
+        p Covering loans upto ₹ 50,000/-
+      section(class="sectionBox")
+        h3(class="sectionH3") Kishor
+        p!= 'Covering loans above ₹ 50,000/-'+ '<br> and upto ₹ 5lakh'
+      section(class="sectionBox")
+        h3(class="sectionH3") Tarun
+        p!= 'Covering loans above ₹ 5lakh'+ '<br> and upto ₹ 10lakh'
+
+//- append foot

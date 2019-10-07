@@ -23,6 +23,7 @@ a {
   border-radius: 6px;
   transition: all 0.6s;
   cursor: pointer;
+  
 }
 .button a {
   color: #fff;
@@ -59,7 +60,7 @@ a {
   font-weight: 500;
 }
 #catalog {
-  background: #c1c1c1;
+  background: url('/images/loan-bnr.jpg') top left / cover no-repeat;
   padding: 40px 30px;
   max-width: 100%;
   display: flex;
@@ -68,7 +69,7 @@ a {
   
 }
 .sectionBox {
-  background: coral;
+  background: rgba(144, 24, 54, 0.6);
   padding: 20px;
   color: #fff;
   border-radius: 15px/19px 20px;
@@ -82,7 +83,15 @@ a {
 }
 .sectionBox > p {
   font-size: 20px;
-  align-content: center;
+  text-align: center;
+}
+
+#footCta > section {
+  background: rgb(206, 110, 20);
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  color: #fff;
 }
 /* media query */
 @media screen and (max-width: 850px) {

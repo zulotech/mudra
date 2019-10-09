@@ -92,6 +92,11 @@ a {
   padding: 20px;
   color: #fff;
 }
+
+.e-mudra-icon {
+  width: 50%;
+  margin-left: 25%;
+}
 /* media query */
 @media screen and (max-width: 850px) {
   #header {
